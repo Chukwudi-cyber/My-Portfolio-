@@ -1,0 +1,433 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #071327;
+    color: white;
+}
+
+.navbar{
+    background-color: #111827;
+    padding: 20px 90px;
+    position: sticky;
+    top: 0;
+}
+
+.nav-con{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-con a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-con a:hover{
+    color: #3b82f6;
+}
+
+.ham{
+    display: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* END OF NAV BAR */
+
+/* BEGINNING OF HERO SECTION 1 */
+.home1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    margin-right: 80px;
+}
+.greeting{
+    color: #2563eb;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+}
+.prof{
+    color: #2563eb;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+}
+.homecont h1{
+    font-size: 50px;
+    margin: 15px 0;
+}
+.homecont p{
+    line-height: 1.4;
+    margin: 25px 0;
+    color: #cbd5e1;
+}
+.btn-box{
+    display: flex;
+    gap: 15px;
+}
+.btn-box button{
+    padding: 10px 13px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+.btn-box button:hover{
+    background-color: #1d4ed8;
+}
+.img1{
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+    height: 30px;
+}
+/* END OF HERO SECTION 1 */
+
+/* BEGINNING OF HERO SECTION 2 */
+.AboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 10%;
+    background-color: #030918;
+    color: white;
+}
+.AboutMe img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.4);   
+}
+.AboutMe span{
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.AboutMe h1{
+    font-size: 40px;
+    margin: 10px 0 15px;
+}
+.AboutMe p{
+    color: #cbd5e1;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+.AboutMe button{
+    padding: 10px 13px;
+    background: transparent;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.AboutMe button:hover{
+    background-color: #2563eb;
+}
+/* END OF HERO SECTION 2 */
+
+/* BEGINNING OF HERO SECTION 3 */
+.MySkills{
+    background-color: #0d1b33;
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+.ski{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.ski1{
+    background: #081526;  
+    border: 1px solid #12325f;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: 0.3s; 
+}
+.MySkills span{
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.MySkills h1{
+    font-size: 45px;
+    margin-top: 15px;
+}
+.ski1:hover{
+    transform: translateY(-8px);
+}
+.ski1 img{
+    width: 60px;
+}
+.ski1 h2{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.ski1 p{
+    color: #cfd8dc;
+    line-height: 1.5;
+}
+/* END OF HERO SECTION 3 */
+
+/* BEGINNING OF HERO SECTION 4 */
+.Projects{
+    background-color: #020b1f;
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+.pro1{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.pag{
+    background: #0d1b33;  
+    border: 1px solid #1e3a5f;
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s;
+}
+.Projects span{
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.Projects h2{
+    font-size: 40px;
+    margin-top: 15px;
+}
+.pag img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.pag h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+.pag p{
+    color: #cbd5e1;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.ml{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.ml button{
+    background: transparent;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    padding: 5px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.View{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    color: #2563eb;
+    cursor: pointer;
+}
+.View img{
+    width: 18px;
+    height: 18px;
+}
+
+/* END OF HERO SECTION 4 */
+
+/* BEGINNING OF HERO SECTION 5 */
+.Contact{
+    background-color: #0d1b33;
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+.conta span{
+    color: #2563eb;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.conta h3{
+    margin: 10px 0;
+}
+.conta p{
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+.ema, .phon, .wha{
+    background-color: #0d1b33;
+    border: 1px solid #1e3a5f;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px;
+    transition: 0.3s ease;
+}
+.ema:hover, .phon:hover, .wha:hover{
+    border-color: #2563eb;
+    transform: translateY(05px);
+}
+.ema img, .phon img, .wha img{
+    width: 45px;
+    height: 45px;
+}
+.ema h3, .phon h3, .wha h3{
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+}
+.ema p, .phon p, .wha p{
+    margin: 5px 0 0;
+    color: #cbd5e1;
+    text-align: left;
+}
+.lastsec{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+/* END OF HERO SECTION 5 */
+
+.foot{
+    text-align: center;
+    
+}
+/* END OF HERO SECTION 5 */
+
+/* PHONE RESPONSIVENESS */
+
+@media screen and (max-width: 768px){
+    .ham{
+        display: block;
+    }
+
+    .nav-con{
+        gap: 13px;
+        display: none;
+    }
+
+    .home1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .homecont h1{
+        font-size: 40px;
+    }
+
+    .homecont p{
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .btn-box{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-box button{
+        width: 100%;
+    }
+
+    /* About Section */
+    .AboutMe{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .AboutMe img{
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Skill Section  */
+    .ski{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* .Projects Section  */
+    .pro1{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .pag{
+        width: 100%;
+    }
+
+    /* Contact Section  */
+    .lastsec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ema, .phon, .wha{
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .foot{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END OF HERO SECTION 3 */
