@@ -8,8 +8,11 @@ body{
 }
 
 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #111827;
-    padding: 20px 90px;
+    padding: 8px 40px;
     position: sticky;
     top: 0;
 }
@@ -19,7 +22,13 @@ body{
     justify-content: center;
     gap: 20px;
 }
-
+.navi img{
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 38px;
+}
 .nav-con a{
     text-decoration: none;
     color: white;
@@ -238,6 +247,10 @@ body{
     margin-bottom: 20px;
     justify-content: center;
 }
+.ml a{
+    color: white;
+    font-size: 20px;
+}
 .ml button{
     background: transparent;
     border: 1px solid #2563eb;
@@ -329,11 +342,17 @@ body{
     .nav-con{
         display: flex;
         justify-content: center;
-        gap: 15px;
+        align-items: center;
     }
 
     .nav-con a{
         font-size: 11px;
+    }
+
+    .navi img{
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
     }
 
     .home1{
