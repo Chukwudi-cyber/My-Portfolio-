@@ -5,6 +5,16 @@ body{
     font-family: 'Times New Roman', Times, serif;
     background-color: #071327;
     color: white;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#home,#About,#Skills,#Projects,#Contact{
+    scroll-margin-top: 90px;
 }
 
 .navbar{
@@ -40,12 +50,9 @@ body{
     color: #3b82f6;
 }
 
-/* .ham{
+.ham{
     display: none;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-} */
+}
 
 /* END OF NAV BAR */
 
@@ -54,8 +61,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px;
-    margin-right: 0;
+    padding: 80px 8%;
+    width: 100%;
 }
 .greeting{
     color: #2563eb;
@@ -97,7 +104,7 @@ body{
     display: flex;
     gap: 10px;
     margin: 25px 0;
-    height: 30px;
+    height: auto;
 }
 /* END OF HERO SECTION 1 */
 
@@ -130,8 +137,8 @@ body{
 }
 .AboutMe p{
     color: #cbd5e1;
-    font-size: 18px;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.8;
     margin-bottom: 25px;
 }
 .AboutMe button{
@@ -317,6 +324,60 @@ body{
     color: #cbd5e1;
     margin-bottom: 20px;
 }
+.lastsec{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-form{
+    width: 100%;
+    max-width: 600px;
+    background: #0d1b33;
+    border: 1px solid #1e3a5f;
+    border-radius: 18px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border: 1px solid #2563eb;
+    background: #071327;
+    color: white;
+    font-size: 17px;
+    box-sizing: border-box;
+} 
+
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    color: #b8c1cc;
+    opacity: 1;
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+.contact-form button{
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 3s;
+}
+
+.contact-form button:hover{
+    background: #1d4ed8;
+}
 .ema, .phon, .wha{
     background-color: #0d1b33;
     border: 1px solid #1e3a5f;
@@ -362,35 +423,67 @@ body{
 
 /* PHONE RESPONSIVENESS */
 
+
+
 @media screen and (max-width: 768px){
+    .ham{
+        display: block;
+        font-size: 35px;
+        cursor: pointer;
+        color: white;
+    }
     .nav-con{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #111827;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-con.active{
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #111827;
+        padding: 15px 0;
+        z-index: 1000;
     }
 
     .nav-con a{
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .navi img{
         width: 40px;
         height: 40px;
-        margin-left: 10px;
+        margin-left: 0;
     }
 
     .home1{
         display: flex;
         flex-direction: column;
-        text-align: center;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        text-align: center;
+        padding: 40px 20px;
         gap: 20px;
-        margin-right: 30px;
+        width: 100%;
+        
     }
 
     .img1{
-        gap: 12px;
+        max-width: 100%;
+        height: auto;
         justify-content: center;
     }
 
@@ -404,8 +497,10 @@ body{
     }
 
     .btn-box{
+        display: flex;
         flex-direction: column;
-        gap: 15px;
+        width: 100%;
+        align-items: center;
     }
 
     .btn-box button{
@@ -416,8 +511,12 @@ body{
     .AboutMe{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        padding: 40px 20px;
         gap: 30px;
+        width: 100%;
     }
 
     .AboutMe img{
@@ -441,13 +540,21 @@ body{
 
     .pag{
         width: 100%;
+        max-width: 100%;
     }
 
     /* Contact Section  */
     .lastsec{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        width: 100%;
+    }
+
+    .contact-form{
+        max-width: 100%;
+        padding: 20px;
     }
 
     .ema, .phon, .wha{
@@ -461,3 +568,104 @@ body{
 }
 
 /* END OF HERO SECTION 3 */
+
+@media screen and (min-width:769px) and (max-width:1024px){
+
+    /* Navbar */
+    .navbar{
+        padding: 15px 30px;
+    }
+
+    .navi img{
+        margin-left: 10px;
+    }
+
+    .nav-con{
+        gap: 15px
+    }
+
+    .nav-con a{
+        font-size: 16px;
+    }
+
+    /* Home section  */
+
+    .home1{
+        padding: 60px 40px;
+        gap: 40px;
+    }
+
+    .homecont h1{
+        font-size: 42px;
+    }
+
+    .homecont p{
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .home1 .img1{
+        width: 200px;
+        height: auto;
+    }
+
+    /* About Section */
+    .AboutMe{
+        padding: 60px 40px;
+        gap: 40px;
+    }
+
+    .AboutMe img{
+        width: 280px;
+        height: 280px;
+    }
+
+    .AboutMe h1{
+        font-size: 34px;
+    }
+
+    .AboutMe p{
+        font-size: 17px;
+    }
+
+    /* Skills */
+    .ski{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /* projects */
+    .pro1{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /* contact */
+    .lastsec{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contact-form{
+        width: 550px;
+        padding: 30px;
+        
+    }
+    .ema, .phon, .wha{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .foot{
+        text-align: center;
+    }
+
+
+
+
+
+
+
+}

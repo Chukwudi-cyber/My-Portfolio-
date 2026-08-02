@@ -8,6 +8,8 @@
     <link rel="Icon" href="image/WhatsApp Image 2026-07-22 at 10.15.04 (1).jpeg">
 </head>
 <body>
+    
+    <script src="script.js"></script>
     <!-- NAVIGATION BAR -->
 
     <nav class="navbar">
@@ -24,8 +26,8 @@
             <a href="#Contact">Contact</a> 
         </div>
 
-        <div class="ham">
-             <!-- <img src="image/icons8-hamburger-menu-50.png" alt=""> -->
+        <div class="ham" id="menu-btn" onclick="toggleMenu()">
+             <img src="image/icons8-hamburger-menu-50.png" alt="">
         </div>
     </nav>
 
@@ -39,7 +41,7 @@
             <h1>Okeke Chukwudi</h1>
             <span class="prof">Aspiring Frontend Developer</span>
 
-            <p> I build clean, responsive and user-friendly websites <br>with HTML & CSS. I'm currently learning and improving <br>my skills every day to become a great developer. </p>
+            <p> I build clean, responsive and user-friendly websites with HTML & CSS. <br>I'm currently learning and improving my skills every day to become a great developer. </p>
 
              <div class="btn-box">
                 <a href="#Projects">
@@ -78,7 +80,7 @@
             <span>ABOUT ME</span>
             <h1>Get to Know Me</h1>
 
-            <p>I'm a passionate frontend developer who loves building beautiful and <br>functional web experiences. My journey started with curiosity, and it has <br> now turned into a passion. I enjoy tuming ideas into real websites and solving real-world <br> problems with code. I'm currently focusing on improving my <br>HTML and CSS skills while exploring more about responsive design <br>and modern layouts.</p>
+            <p>I'm a passionate frontend developer who loves building beautiful and functional web experiences. My journey started with curiosity, and it has now turned into a passion. I enjoy tuming ideas into real websites and solving real-world problems with code. I'm currently focusing on improving my HTML and CSS skills while exploring more about responsive design and modern layouts.</p>
             <!-- <button>Read More</button> -->
         </div>
         
@@ -231,36 +233,38 @@
             <h3>Get In Touch</h3>
             <p>I'm open to opportunities and collaborations. Let's connect!</p>
         </div>
+
             <div class="lastsec">
 
-                 <div class="ema">
-                     <img src="image/icons8-envelope-48.png" alt="">
+                <form action="https://formsubmit.co/okekechukwudi2001@gmail.com" method="POST" class="contact-form">
 
-                <div>
-                     <h3>Email</h3>
-                     <p>okekechukwudi2001@gmail.com</p>
-                </div>
-                 </div>
-            
+                    <input type="text" name="name" placeholder="Your Name" required>
 
-                 <div class="phon">
-                     <img src="image/icons8-phone-48.png" alt="">
+                    <input type="email" name="email" placeholder="Your Email" required>
 
-                 <div>
-                     <h3>Phone</h3>
-                     <p>09051602849</p>
-                 </div>
-                 </div>
+                    <input type="text" name="subject" placeholder="Subject">
+
+                    <textarea 
+                         name="message"
+                         rows="6"
+                         placeholder="Write your message..."
+                         required></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thankyou.html">
+
+                </form>
 
 
-                  <div class="wha">
-                     <img src="image/icons8-whatsapp-logo-94 (1).png" alt="">
-            
-                 <div>
-                     <h3>WhatsApp</h3>
-                     <p>09078843338</p>
-                 </div>
-                  </div>
+
+
+
+                 
+
+
             </div>
 
     
